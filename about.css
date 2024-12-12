@@ -1,0 +1,128 @@
+body{
+    text-align: center;
+    background-color: rgb(164, 103, 103);
+    color: white;
+}
+#about{
+    background-color: rgb(164, 103, 103);
+    font-size: 20pxpx;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1280px;
+    gap: 20px;
+    font-size: 1.25rem;
+    font-style:serif;
+}
+p{
+    text-align: justify;
+}
+.details{
+   display: flex;
+   justify-content: space-around;
+   /* padding: 20px 0px; */
+   margin-top: 10px;
+}
+.education,.languages,.strengths{
+    padding: 20px;
+    box-shadow: 2px 3px #2f2e2e;
+    border-radius: 10px;
+
+}
+.right img{
+    height: 400px;
+    width:400px;
+    clip-path:circle(150px);
+}
+#skills{
+   
+    margin: auto;
+    max-width: 1280px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 3px black;
+    
+}
+#skills img{:
+    border:2px solid rgb(149, 66, 66);
+    height: 120px;
+    width: 150px;
+    gap: 10px;
+}
+ 
+
+
+
+/* pcs */
+@media (min-width:769px) and (max-width:1280px){
+
+
+}
+/* tablets */
+@media (min-width:481px) and (max-width:768px){
+    header{
+        flex-direction:column;
+        gap: 10px;
+    }
+    nav{
+        flex-direction: column;
+        gap: 10px;
+    }
+    #about{
+        flex-direction: column;
+        justify-content: center;
+        /* padding: 0px 20px; */
+    }
+    .details{
+        flex-direction: column;
+    }
+    #skills{
+        grid-template-columns: repeat(3,1fr);
+    }
+   
+}
+/* mobiles */
+@media  (max-width:480px){
+    header{
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    nav{
+        flex-direction: column;
+        gap: 10px;
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 10px;
+
+    }
+    #banner h2{
+        text-align: center;
+        font-size: 2rem;
+    }
+    #banner p{
+        font-size: 1rem;
+    }
+    #about{
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 0px 20px;
+    }
+    .details{
+        flex-direction: column;
+    }
+    #skills{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #skills img{
+        height: 150px;
+        width: 150px;
+    }
+
+}
+

@@ -1,0 +1,118 @@
+body{
+    background-color: rgb(164, 103, 103);
+    color: aliceblue;
+    font-size: 1.25rem;
+    font-style: serif;
+}
+#projects{
+    margin: auto;
+    border-color: rgb(164, 103, 103);;
+    max-width: 1280px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+
+}
+.card img{
+    width: 350px;
+    border-radius: 5px;
+
+}
+.card{
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 3px #333;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.card button:hover{
+    padding: 10px 20px;
+    margin: 5px;
+    display: block;
+    background-color: #ff5e5e9f;
+    border: 2px solid var(--secondary-color);
+    color: rgba(255, 255, 255, 0.454);
+}
+.card button:hover{
+    background-color: var(--secondary-color);
+    color: rgb(169, 147, 147);
+}
+
+
+.title{
+    text-align: center;
+    padding: 10px;
+    
+}
+
+/* pcs */
+@media (min-width:769px) and (max-width:1280px){
+
+
+}
+/* tablets */
+@media (min-width:481px) and (max-width:768px){
+    header{
+        flex-direction:column;
+        gap: 10px;
+    }
+    nav{
+        flex-direction: column;
+        gap: 10px;
+    }
+    #about{
+        flex-direction: column;
+        justify-content: center;
+        /* padding: 0px 20px; */
+    }
+    .details{
+        flex-direction: column;
+    }
+    #skills{
+        grid-template-columns: repeat(3,1fr);
+    }
+   
+}
+/* mobiles */
+@media  (max-width:480px){
+    header{
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    nav{
+        flex-direction: column;
+        gap: 10px;
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 10px;
+
+    }
+    #banner h2{
+        text-align: center;
+        font-size: 2rem;
+    }
+    #banner p{
+        font-size: 1rem;
+    }
+    #about{
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 0px 20px;
+    }
+    .details{
+        flex-direction: column;
+    }
+    #skills{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #skills img{
+        height: 150px;
+        width: 150px;
+    }
+
+}
+
